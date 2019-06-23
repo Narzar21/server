@@ -1,0 +1,13 @@
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 8888;
+
+app.get('/',function (req, res){
+  res.send('Привет от сервера! Для перехода к таблице доберите в адресной строке /table');
+});
+app.get('/table',function (req, res) {
+  res.redirect('http://localhost:3000');
+//  next();
+});
+app.listen(port);
+console.log("сервер с портом "+port+" запущен");
