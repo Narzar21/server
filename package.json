@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "react-dom": "^16.8.6",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
     "antd": "^3.19.8"
   },
   "devDependencies": {},
